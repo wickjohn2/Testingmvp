@@ -5,7 +5,7 @@ def GenerateConfig(context):
   resources = {
       'type': 'compute.v1.instanceGroup.managed',
       'properties': {
-          'size': context.properties['count'],
+          'size': 3,
           'template': context.properties['template']
           'zone': context.properties['zone'],
           'base-instance-name': adlib,
