@@ -1,0 +1,20 @@
+imports:
+  path: Environment_MVP.py
+  
+ resources:
+  name: adlib-transformation-engine
+  type: Evironment_MVP.py
+  properties:
+    zone: us-central1-a
+    count: 3
+    template: https://www.googleapis.com/compute/v1/projects/Albatross-JohnW-Sandbox/adlib-transformation-template
+    machineType: n1-standard-2
+    namePrefix: transformation-engine
+  name: adlib-management-sql
+  type: instance_MVP.py
+    properties
+      zone: us-central1-a
+      image: https://www.googleapis.com/compute/v1/projects/Albatross-KevinG-Sandbox/adlib-management-sql-image
+      machineType: n1-standard-4
+      namePrefix: adlib-management-sql
+   
