@@ -7,7 +7,6 @@ resources:
    type: Evironment_MVP.py
    properties:
      zone: us-central1-a
-     count: 3
      template: https://www.googleapis.com/compute/v1/projects/Albatross-JohnW-Sandbox/adlib-transformation-template
      machineType: n1-standard-2
      namePrefix: transformation-engine
