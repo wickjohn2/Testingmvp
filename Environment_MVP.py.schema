@@ -2,7 +2,6 @@ required:
 - zone
 - image
 - machineType
-- count
 - namePrefix
 
 properties:
@@ -15,9 +14,6 @@ properties:
   machineType:
     type: string
     descripton: Type of GCE instance to use.
-  count:
-    type: integer
-    description: Number of instances on the pool.
   namePrefix:
     type: string
     description:  The prefix string to use while naming the instances in the pool. Name of the instance is constructed by concatenating namePrefix, deploymentName and an instance id where 1 <= id <= cluster size seperated by '-'
