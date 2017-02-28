@@ -13,7 +13,7 @@ resources:
      namePrefix: transformation-engine
  - name: adlib-management-sql
    type: instance_MVP.py
-   properties
+   properties:
     zone: us-central1-a
     image: https://www.googleapis.com/compute/v1/projects/Albatross-KevinG-Sandbox/adlib-management-sql-image
     machineType: n1-standard-4
