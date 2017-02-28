@@ -1,7 +1,6 @@
-def GenerateInstanceConfig(context, index):
+def GenerateInstanceConfig(context):
   """Helper method to create the config for a single compute instance."""
-  name_prefix = ''.join([context.properties['namePrefix'], '-',
-                         context.env['deployment'], '-', str(index)])
+  name_prefix = context.properties['namePrefix']
   machine_type = ''.join(['https://www.googleapis.com/compute/v1/projects/',
                           context.env['project'], '/zones/',
                           context.properties['zone'], '/machineTypes/',
