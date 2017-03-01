@@ -8,7 +8,7 @@ def GenerateConfig(context):
           'size': 3,
           'template': context.properties['template']
           'zone': context.properties['zone'],
-          'base-instance-name': adlib,
+          'base-instance-name': app,
       }
   }
   return {'resources': resources}
